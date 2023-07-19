@@ -1,0 +1,89 @@
+#main {
+  position: relative;
+}
+
+#multi-step-form {
+  position: relative;
+  height: 100%;
+}
+
+#multi-step-form > fieldset {
+  position: relative;
+  top: -73px;
+  border: none;
+  max-width: 500px;
+  margin-inline: auto;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  width: calc(100vw - 2rem);
+  height: 100%;
+  align-items: flex-start;
+  background-color: hsl(var(--clr-white));
+}
+
+.fieldset-header {
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-block-end: 1rem;
+}
+
+.title {
+  font-size: var(--fs-500);
+}
+
+.paragraph {
+  color: hsl(var(--clr-neutral-cool-gray));
+  padding-inline-end: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #main {
+    display: flex;
+    padding: 1rem;
+    border-radius: 8px;
+    gap: 2rem;
+    width: 100%;
+    max-width: 950px;
+    background-color: hsl(var(--clr-white));
+  }
+
+  #multi-step-form > fieldset {
+    position: static;
+    width: 100%;
+    max-width: none;
+    padding: 2rem 1.5rem 0;
+  }
+
+  #multi-step-form > fieldset:not(.personal) > .fieldset-header {
+    margin-block-end: 2.5rem;
+  }
+
+  .form-container {
+    flex-grow: 2;
+    margin-inline-end: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: var(--fs-300);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #main {
+    gap: 4rem;
+  }
+
+  .form-container {
+    margin-inline-end: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #main {
+    gap: 6rem;
+  }
+
+  .form-container {
+    margin-inline-end: 5.5rem;
+  }
+}

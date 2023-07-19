@@ -1,0 +1,10 @@
+.addons-container {
+  gap: 1rem;
+}
+
+.addons-error {
+  font-size: var(--fs-100);
+  font-weight: 500;
+  margin-block-start: 1rem;
+  color: hsl(var(--clr-primary-strawberry-red));
+}

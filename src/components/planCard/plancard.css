@@ -1,0 +1,51 @@
+.plancard {
+  padding: 1rem;
+  border: 2px solid hsl(var(--clr-neutral-cool-gray), 0.25);
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in;
+}
+
+.plancard input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.plan-content {
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.details {
+  gap: 0.25rem;
+  align-items: flex-start;
+}
+
+.plan-content .details label {
+  text-transform: capitalize;
+  font-size: var(--fs-200);
+  font-weight: 700;
+  color: hsl(var(--clr-primary-marine-blue));
+}
+
+.pricing {
+  font-size: var(--fs-100);
+  color: hsl(var(--clr-neutral-cool-gray), 0.75);
+}
+
+.free {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .plancard:hover {
+    cursor: pointer;
+    border-color: hsl(var(--clr-primary-purplish-blue));
+  }
+
+  .plan-content {
+    gap: 2rem;
+  }
+}

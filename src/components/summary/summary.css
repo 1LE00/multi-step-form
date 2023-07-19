@@ -1,0 +1,79 @@
+.summary-section {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: hsl(var(--clr-primary-light-blue), 0.15);
+}
+
+.subscription-type {
+  justify-content: space-between;
+  padding-block: 0.5rem;
+  margin-block-end: 1rem;
+  border-bottom: 1px solid hsl(var(--clr-neutral-cool-gray), 0.25);
+}
+
+.subscription-content {
+  align-items: flex-start;
+}
+
+.subscription-name {
+  font-size: var(--fs-200);
+  font-weight: 500;
+  text-transform: capitalize;
+  color: hsl(var(--clr-primary-marine-blue));
+}
+
+.go-to-plan {
+  font-size: var(--fs-200);
+  font-weight: 500;
+  color: hsl(var(--clr-neutral-cool-gray), 0.75);
+  text-decoration: underline 1.5px hsl(var(--clr-neutral-cool-gray));
+  transition: color 0.25s ease-out, text-decoration 0.25s ease-in;
+}
+
+.subscription-price {
+  font-size: var(--fs-200);
+  font-weight: 700;
+  color: hsl(var(--clr-primary-marine-blue));
+}
+
+.selected-addons {
+  gap: 0.5rem;
+}
+
+.picked-addons {
+  justify-content: space-between;
+}
+
+.picked-addon-name {
+  font-size: var(--fs-200);
+  color: hsl(var(--clr-neutral-cool-gray), 0.9);
+}
+
+.picked-addon-price {
+  font-size: var(--fs-200);
+  font-weight: 500;
+  color: hsl(var(--clr-primary-marine-blue));
+}
+
+.total-billing {
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.total-content {
+  font-size: var(--fs-200);
+  color: hsl(var(--clr-neutral-cool-gray), 0.9);
+}
+
+.actual-cost {
+  font-size: var(--fs-300);
+  font-weight: 700;
+  color: hsl(var(--clr-primary-purplish-blue));
+}
+
+@media screen and (min-width: 768px) {
+  .go-to-plan:hover {
+    color: hsl(var(--clr-primary-purplish-blue));
+    text-decoration-color: hsl(var(--clr-primary-purplish-blue));
+  }
+}

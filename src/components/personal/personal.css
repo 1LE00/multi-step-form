@@ -1,0 +1,10 @@
+.personal-content {
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.personal-content > section {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+}

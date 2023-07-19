@@ -1,0 +1,69 @@
+.personal-label {
+  font-size: var(--fs-200);
+  font-weight: 500;
+  margin-block-end: 0.25rem;
+  color: hsl(var(--clr-primary-marine-blue));
+}
+
+.error {
+  font-size: var(--fs-100);
+  font-weight: 500;
+  margin-block-start: 0.25rem;
+  color: hsl(var(--clr-primary-strawberry-red));
+}
+
+.personal-input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: var(--fs-200);
+  font-weight: 500;
+  color: hsl(var(--clr-primary-marine-blue));
+  border: 2px solid hsl(var(--clr-neutral-cool-gray), 0.25);
+  transition: color 0.5s ease-out, border 0.5s ease-in;
+}
+
+.personal-input#name {
+  text-transform: capitalize;
+}
+
+.personal-input.border-red {
+  border-color: hsl(var(--clr-primary-strawberry-red));
+  color: hsl(var(--clr-primary-strawberry-red));
+}
+
+.personal-input:focus-within {
+  border-color: hsl(var(--clr-primary-purplish-blue));
+}
+
+.personal-input.border-red:focus-within {
+  border-color: hsl(var(--clr-primary-strawberry-red));
+}
+
+.personal-input::placeholder {
+  font-size: var(--fs-100);
+  font-weight: 500;
+  text-transform: initial;
+  color: hsl(var(--clr-neutral-cool-gray));
+  transition: font-size 0.25s ease-in;
+}
+
+.personal-input:focus-within::placeholder {
+  font-size: 0.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .personal-label {
+    font-weight: 400;
+    cursor: text;
+  }
+
+  .personal-input {
+    font-weight: 700;
+  }
+
+  .error {
+    position: absolute;
+    right: 0;
+    margin-block-start: 0;
+  }
+}
